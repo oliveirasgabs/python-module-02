@@ -4,7 +4,7 @@ class PlantError(Exception):
 
 
 def water_plant(plant_name: str) -> None:
-    capitalize_plant = plant_name.capitalize()
+    capitalize_plant: str = plant_name.capitalize()
     if capitalize_plant != plant_name:
         raise PlantError(f"Invalid plant name to water: {plant_name}")
     else:
